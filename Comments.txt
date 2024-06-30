@@ -1,0 +1,41 @@
+//One
+/*//1
+//double R;
+//string? xy;
+//double x;
+//double y;
+//Random random = new Random();
+//R = random.Next(0,5);
+//Console.Write("Enter (x,y): ");
+//xy = Console.ReadLine();
+//string[] coord = xy.Split(',', ' ', '.');
+//x = double.Parse(coord[0].ToString());
+//y = double.Parse(coord[1].ToString());
+//bool IsNumberX = double.TryParse(x.ToString(), out x);
+//bool IsNumberY = double.TryParse(x.ToString(), out y);
+//if (IsNumberX && IsNumberY)
+//{
+//    if (R * R == (x * x) + (y * y))
+//    {
+//        Console.WriteLine("The coordinates in the circle");
+//    }
+//    else
+//    {
+//        Console.WriteLine("The coordinates not in the circle");
+//    }
+//}
+//else { Console.WriteLine("Wrong, try agin"); }*/
+//2
+//PrintMultiplicationTable();
+//Two
+//1
+//CalculateVAT();
+//2
+//ToOrdinlNumber();
+//Three
+//1
+//Paint();
+//2
+//PaintTriangle();
+//Four
+//Five
