@@ -44,3 +44,26 @@
 //Eight
 //Nine
 //Ten
+//1
+/*int age;
+Write("Enter your age:");
+string input = ReadLine();
+WriteLine("Before");
+try
+{
+    age = int.Parse(input);
+}
+catch (FormatException)
+{
+    WriteLine("The age you entered is not");
+}
+catch (OverflowException)
+{
+    WriteLine("You cannot be so old.");
+}
+catch (Exception ex)
+{
+    WriteLine($"{ex.GetType()} says {ex.Message}");
+}
+WriteLine("After");*/
+//2
