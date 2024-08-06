@@ -40,6 +40,7 @@
 //Four
 //Five
 //Six
+//Penguin pingvin1 = new Penguin(2.4, "Yellow");
 //Seven
 //Eight
 //Nine
@@ -67,3 +68,23 @@ catch (Exception ex)
 }
 WriteLine("After");*/
 //2
+try
+{
+    checked
+    {
+        int x = int.MaxValue - 1;
+        WriteLine($"Initial value: {x}");
+        x++;
+        WriteLine($"After incrementing: {x}");
+        x++;
+        WriteLine($"Affter incrementing: {x}");
+        x++;
+        WriteLine($"Affter incrementing: {x}");
+        x++;
+    }
+}
+catch(OverflowException)
+{
+    WriteLine($"The code overflowed but I caught the exception");
+}
+//Eleven
