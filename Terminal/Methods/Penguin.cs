@@ -1,12 +1,12 @@
-﻿namespace Terminal;
+﻿namespace Terminal.Methods;
 internal class Penguin
 {
     int age = 0;
     double m;
     string color;
-    public Penguin() 
+    public Penguin()
     {
-        m= 2.4;
+        m = 2.4;
         color = "White";
     }
     public Penguin(double m, string color)
@@ -16,8 +16,8 @@ internal class Penguin
     }
     public Penguin(Penguin pingvin)
     {
-        this.m = pingvin.m;
-        this.color = pingvin.color;
+        m = pingvin.m;
+        color = pingvin.color;
     }
     static Penguin()
     {
