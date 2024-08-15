@@ -1,33 +1,60 @@
 ﻿using Terminal;
 using static System.Console;
 //1
-Square object1 = new(24);
-WriteLine($"Area of the square is {object1.GetArea()}");
+WriteLine("****How the animals sounds****");
+//Tiger tiger = new Tiger();
+//tiger.Sound();
+//Dog dog = new Dog();
+//dog.Sound();
+//Monkey monkey = new Monkey();
+//monkey.Sound();
 //2
-DerivedClass object2 = new DerivedClass();
-object2.AbstractMethod();
-WriteLine($"X = {object2.X} Y = {object2.Y}");
+//ISound animal = new Tiger();
+//animal.Sound();
+//animal = new Dog();
+//animal.Sound();
+//animal = new Monkey();
+//animal.Sound();
 //3
-ImplementationClass object3 = new ImplementationClass();
-object3.SampleMethod();
-ISampleInterface object4 = new ImplementationClass();
-object4.SampleMethod();
-ImplementationClassA objectA = new ImplementationClassA();
-ImplementationClassB objectB = new ImplementationClassB();
-ISampleInterface iOb = objectA;
-iOb.SampleMethod();
-iOb = objectB;
-iOb.SampleMethod();
-if (iOb is ISampleInterface)
+//List<ISound> animls =
+//[
+//    new Dog(),
+//    new Monkey(),
+//    new Tiger(),
+//];
+//foreach (ISound animal in animls)
+//{
+//    animal.Sound();
+//}
+//4
+ISound animal = GetAnimal();
+//animal.Sound();
+//animal = GetAnimal();
+//animal.Sound();
+//animal = GetAnimal();
+//animal.Sound();
+//animal = GetAnimal();
+//5
+MakeSound(animal);
+animal = GetAnimal();
+MakeSound(animal);
+animal = GetAnimal();
+MakeSound(animal);
+//6
+static ISound GetAnimal()
 {
-    WriteLine("DoneA");
-    WriteLine("DoneB");
+    ISound animal;
+    Random random = new();
+    int temp = random.Next(0, 3);
+    return temp switch
+    {
+        0 => animal = new Tiger(),
+        1 => animal = new Dog(),
+        2 => animal = new Monkey(),
+        _ => throw new Exception("No animal"),
+    };
 }
-else
+static void MakeSound(ISound animal)
 {
-    WriteLine("Class a and b do not implement any interface");
-}
-try
-{
-
+    animal.Sound();
 }
