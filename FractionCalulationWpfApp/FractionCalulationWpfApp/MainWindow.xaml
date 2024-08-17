@@ -1,0 +1,30 @@
+﻿<Window x:Class="FractionCalulationWpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FractionCalulationWpfApp"
+        mc:Ignorable="d"
+        Title="FractionCalulation" Height="400" Width="600">
+    <Grid>
+        <TextBox Name="num1" HorizontalAlignment="Left" Margin="20,40,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100" Height="40"/>
+        <TextBox Name="den1" HorizontalAlignment="Left" Margin="20,120,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100" Height="40"/>
+        <TextBox Name="num2" HorizontalAlignment="Left" Margin="220,40,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100" Height="40"/>
+        <TextBox Name="den2" HorizontalAlignment="Left" Margin="220,120,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100" Height="40"/>
+        <ComboBox Name="op" HorizontalAlignment="Left" Margin="150,90,0,0" VerticalAlignment="Top" Width="39" Height="20">
+            <ComboBoxItem Content="+">
+            </ComboBoxItem>
+            <ComboBoxItem Content="-">
+            </ComboBoxItem>
+            <ComboBoxItem Content="*">
+            </ComboBoxItem>
+            <ComboBoxItem Content="/">
+            </ComboBoxItem>
+        </ComboBox>
+        <Label Content="=" HorizontalAlignment="Left" Margin="340,80,0,0" VerticalAlignment="Top" Height="40"/>
+        <Label Name="Answer" Content="0" HorizontalAlignment="Left" Margin="400,80,0,0" VerticalAlignment="Top" Height="40"/>
+        <Button Name="btnClear" Content="Clear" HorizontalAlignment="Left" Margin="20,200,0,0" VerticalAlignment="Top" Width="100" Height="40" Click="btnClear_Click"/>
+        <Button Name="btnCalculate" Content="Calculate" HorizontalAlignment="Left" Margin="220,200,0,0" VerticalAlignment="Top"  Width="100" Height="40" Click="btnCalculate_Click"/>
+
+    </Grid>
+</Window>
