@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.10.35013.160
+VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Terminal", "Terminal\Terminal.csproj", "{C679070A-1CC4-49FE-8EDE-CC9F7C3198B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Terminal", "Terminal\Terminal.csproj", "{BE7F5D8C-04FE-49AB-9C6D-DA839A9B6B2D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FractionCalulationWpfApp", "FractionCalulationWpfApp\FractionCalulationWpfApp\FractionCalulationWpfApp.csproj", "{A585C215-F2BA-4486-A4AB-6E22AEB24A39}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FractionCalculator", "FractionCalulationWpfApp\FractionCalculator\FractionCalculator.csproj", "{73A5181D-92B2-4902-9E39-FF9B796E2A79}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +15,20 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C679070A-1CC4-49FE-8EDE-CC9F7C3198B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C679070A-1CC4-49FE-8EDE-CC9F7C3198B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C679070A-1CC4-49FE-8EDE-CC9F7C3198B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C679070A-1CC4-49FE-8EDE-CC9F7C3198B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE7F5D8C-04FE-49AB-9C6D-DA839A9B6B2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE7F5D8C-04FE-49AB-9C6D-DA839A9B6B2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE7F5D8C-04FE-49AB-9C6D-DA839A9B6B2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE7F5D8C-04FE-49AB-9C6D-DA839A9B6B2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A585C215-F2BA-4486-A4AB-6E22AEB24A39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A585C215-F2BA-4486-A4AB-6E22AEB24A39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A585C215-F2BA-4486-A4AB-6E22AEB24A39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A585C215-F2BA-4486-A4AB-6E22AEB24A39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73A5181D-92B2-4902-9E39-FF9B796E2A79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73A5181D-92B2-4902-9E39-FF9B796E2A79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73A5181D-92B2-4902-9E39-FF9B796E2A79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73A5181D-92B2-4902-9E39-FF9B796E2A79}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {24E0C24B-E35A-420B-A50A-FCD12F9DA361}
 	EndGlobalSection
 EndGlobal

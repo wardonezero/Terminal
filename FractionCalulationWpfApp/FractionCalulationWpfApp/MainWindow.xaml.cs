@@ -56,7 +56,6 @@ public partial class MainWindow : Window
             {
                 MessageBox.Show("Please enter numbers.");
             }
-            //Fraction fraction1 = new Fraction();
         }
     }
 }
