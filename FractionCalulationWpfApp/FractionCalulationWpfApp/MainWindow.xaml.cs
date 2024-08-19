@@ -21,10 +21,10 @@ public partial class MainWindow : Window
 
     private void btnCalculate_Click(object sender, RoutedEventArgs e)
     {
-        bool isNum1 = int.TryParse(num1.Text, out int intNum1);
-        bool isDen1 = int.TryParse(den1.Text, out int intDen1);
-        bool isNum2 = int.TryParse(num2.Text, out int intNum2);
-        bool isDen2 = int.TryParse(den2.Text, out int intDen2);
+        bool isNum1 = int.TryParse(num1.Text, out int intNum1) && intNum1 != 0;
+        bool isDen1 = int.TryParse(den1.Text, out int intDen1) && intDen1 != 0;
+        bool isNum2 = int.TryParse(num2.Text, out int intNum2) && intNum2 != 0;
+        bool isDen2 = int.TryParse(den2.Text, out int intDen2) && intDen2 != 0;
         var selectedOperation = op.SelectedItem as ComboBoxItem;
         string? operation = selectedOperation?.Content.ToString();
         if (isNum1 && isDen1 && isNum2 && isDen2)

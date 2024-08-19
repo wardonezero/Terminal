@@ -12,13 +12,27 @@ public struct Fraction
     }
     public static Fraction operator +(Fraction a) => a;
     public static Fraction operator -(Fraction a) => new Fraction(-a._numerator, a._denominator);
-    public static Fraction operator +(Fraction a, Fraction b) => new Fraction(a._numerator * b._denominator + a._denominator * b._numerator, a._denominator * b._denominator);
-    public static Fraction operator -(Fraction a, Fraction b) => a + (-b);
-    public static Fraction operator *(Fraction a, Fraction b) => new Fraction(a._numerator * b._numerator, a._denominator * b._denominator);
+    public static Fraction operator +(Fraction a, Fraction b)
+    {
+        int[] lcd = [a._denominator, b._denominator];
+        if (a._denominator == b._denominator)
+            return new Fraction(a._numerator + b._numerator, a._denominator);
+        else
+            return new Fraction(a._numerator * b._denominator + a._denominator * b._numerator, a._denominator * b._denominator);
+    }
+    public static Fraction operator -(Fraction a, Fraction b)
+    {
+        if (a._denominator == b._denominator)
+            return new Fraction(a._numerator - b._numerator, a._denominator);
+        else
+            return new Fraction(a._numerator * b._denominator - a._denominator * b._numerator, a._denominator * b._denominator);
+    }
+    public static Fraction operator *(Fraction a, Fraction b)
+    {
+        return new Fraction(a._numerator * b._numerator, a._denominator * b._denominator);
+    }
     public static Fraction operator /(Fraction a, Fraction b)
     {
-        if (b._numerator == 0)
-            throw new DivideByZeroException("Denominator cannot be zero.");
         return new Fraction(a._numerator * b._denominator, a._denominator * b._numerator);
     }
     public override string ToString() => $"{_numerator} / {_denominator}";
