@@ -13,10 +13,10 @@ public partial class MainWindow : Window
     }
     private void btnClear_Click(object sender, RoutedEventArgs e)
     {
-        num1.Text = "0";
-        den1.Text = "0";
-        num2.Text = "0";
-        den2.Text = "0";
+        num1.Text = "";
+        den1.Text = "";
+        num2.Text = "";
+        den2.Text = "";
     }
 
     private void btnCalculate_Click(object sender, RoutedEventArgs e)
