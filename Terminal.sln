@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FractionCalulationWpfApp", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FractionCalculator", "FractionCalulationWpfApp\FractionCalculator\FractionCalculator.csproj", "{73A5181D-92B2-4902-9E39-FF9B796E2A79}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homework", "Homework\Homework.csproj", "{7039020F-33EE-42A7-A22C-431DE2DC7D58}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{73A5181D-92B2-4902-9E39-FF9B796E2A79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73A5181D-92B2-4902-9E39-FF9B796E2A79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73A5181D-92B2-4902-9E39-FF9B796E2A79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7039020F-33EE-42A7-A22C-431DE2DC7D58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7039020F-33EE-42A7-A22C-431DE2DC7D58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7039020F-33EE-42A7-A22C-431DE2DC7D58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7039020F-33EE-42A7-A22C-431DE2DC7D58}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

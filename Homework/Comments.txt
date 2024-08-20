@@ -1,0 +1,17 @@
+One
+Shapes();
+Two
+1
+Factorial();
+2
+Fibonacci();
+3
+Collatz();
+Three
+PaintTriangle();
+Four
+Five
+1
+PaintChessBoard();
+2
+Movement();
