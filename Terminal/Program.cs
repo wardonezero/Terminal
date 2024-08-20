@@ -9,5 +9,10 @@ using static System.Console;
 //string ch = "aabdbaa";
 //WriteLine(ch.IsPaliandrom());
 //3
-int sn = 18;
-WriteLine(sn.IsPrime());
+int sn = 0;
+while (true)
+{
+    WriteLine($"{sn} = {sn.IsPrime()} ");
+    sn++;
+    if (sn == 1000) break;
+}

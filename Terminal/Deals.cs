@@ -39,8 +39,13 @@ internal static class Deals
     }
     public static bool IsPrime(this int sn)
     {
-        if (sn % 2 != 0 && sn % 3 != 0)
-            return true;
-        return false;
+        if (sn <= 1) return false;
+        if (sn >= 2 && sn <= 3) return true;
+        if (sn % 2 == 0 || sn % 3 == 0) return false;
+        for (int i = 3; i * i <= sn; i += 2)
+        {
+            if (sn % i == 0) return false;
+        }
+        return true;
     }
 }
