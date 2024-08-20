@@ -48,6 +48,17 @@ public struct Fraction
         int gcd = s._numerator < s._denominator? GCD(s._denominator, s._numerator): GCD(s._numerator, s._denominator);
         return new Fraction(s._numerator / gcd, s._denominator / gcd);
     }
+    //Greatest Common Divisor
+    /// <summary>
+    /// Calculates the Greatest Common Divisor (GCD) of two integers using the Euclidean algorithm.
+    /// </summary>
+    /// <param name="quotient">The first integer</param>
+    /// <param name="remainder"> The second integer.</param>
+    /// <returns>The GCD of the two integers.</returns>
+    /// <remarks>
+    /// The method repeatedly replaces the quotient and remainder with the remainder and the quotient modulo remainder, respectively, until the remainder is zero.
+    /// The last non-zero remainder is the GCD.
+    /// </remarks>
     private static int GCD(int quotient, int remainder)
     {
         int temp;
@@ -65,6 +76,17 @@ public struct Fraction
             }
         }
     }
+    //Least Common Denominator
+    /// <summary>
+    /// Calculates the Least Common Multiple (LCM) of two integers.
+    /// </summary>
+    /// <param name="a">The first integer.</param>
+    /// <param name="b">The second integer.</param>
+    /// <returns>The LCM of the two integers.</returns>
+    /// <remarks>
+    /// The method first calculates the Greatest Common Divisor (GCD) of the two integers using a helper method `GCD`.
+    /// It then computes the LCM using the formula: (a / gcd) * b.
+    /// </remarks>
     private static int LCM(int a, int b)
     {
         int gcd = a < b ? GCD(a, b) : GCD(b, a);
