@@ -17,22 +17,30 @@ public struct Fraction
         if (a._denominator == b._denominator)
             return Simplifier(new Fraction(a._numerator + b._numerator, a._denominator));
         else
-            return new Fraction(a._numerator * b._denominator + a._denominator * b._numerator, a._denominator * b._denominator);
+        {
+            int lcm = LCM(a._denominator, b._denominator);
+            return Simplifier(new Fraction((lcm/a._denominator)*a._numerator+ (lcm / b._denominator) * b._numerator, lcm));
+        }
+            //return new Fraction(a._numerator * b._denominator + a._denominator * b._numerator, a._denominator * b._denominator);
     }
     public static Fraction operator -(Fraction a, Fraction b)
     {
         if (a._denominator == b._denominator)
             return new Fraction(a._numerator - b._numerator, a._denominator);
         else
-            return new Fraction(a._numerator * b._denominator - a._denominator * b._numerator, a._denominator * b._denominator);
+        {
+            int lcm = LCM(a._denominator, b._denominator);
+            return Simplifier(new Fraction((lcm / a._denominator) * a._numerator - (lcm / b._denominator) * b._numerator, lcm));
+        }
+            //return new Fraction(a._numerator * b._denominator - a._denominator * b._numerator, a._denominator * b._denominator);
     }
     public static Fraction operator *(Fraction a, Fraction b)
     {
-        return new Fraction(a._numerator * b._numerator, a._denominator * b._denominator);
+        return Simplifier(new Fraction(a._numerator * b._numerator, a._denominator * b._denominator));
     }
     public static Fraction operator /(Fraction a, Fraction b)
     {
-        return new Fraction(a._numerator * b._denominator, a._denominator * b._numerator);
+        return Simplifier(new Fraction(a._numerator * b._denominator, a._denominator * b._numerator));
     }
     public override string ToString() => $"{_numerator} / {_denominator}";
     private static Fraction Simplifier(Fraction s)
