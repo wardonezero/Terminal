@@ -3,8 +3,5 @@ namespace Terminal;
 internal class Colors : IEnumerable
 {
     public readonly string[] colors = ["RED", "GREEN", "BLUE", "YELLOW"];
-    public IEnumerator GetEnumerator()
-    {
-        return new ColorEnumerator(colors); 
-    }
+    public IEnumerator GetEnumerator() { return new ColorEnumerator(colors); }
 }

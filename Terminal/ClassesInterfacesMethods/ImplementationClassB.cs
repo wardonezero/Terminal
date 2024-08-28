@@ -3,6 +3,6 @@ internal class ImplementationClassB : ISampleInterface
 {
     public void SampleMethod()
     {
-        Console.WriteLine("I'm from ImplementationClassB");
+        Console.WriteLine("I'm from Implementation Class B");
     }
 }
