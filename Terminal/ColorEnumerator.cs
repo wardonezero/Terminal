@@ -1,7 +1,5 @@
 ﻿using System.Collections;
-
 namespace Terminal;
-
 internal class ColorEnumerator : IEnumerator
 {
     private readonly string[] _colors;
