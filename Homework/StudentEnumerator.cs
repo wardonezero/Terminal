@@ -1,6 +1,4 @@
 ﻿using System.Collections;
-using System.Drawing;
-using System.Reflection.Metadata.Ecma335;
 namespace Homework
 {
     internal class StudentEnumerator : IEnumerator
@@ -33,7 +31,7 @@ namespace Homework
                     return true;
                 }
             }
-                return false;
+            return false;
         }
         public void Reset()
         {
