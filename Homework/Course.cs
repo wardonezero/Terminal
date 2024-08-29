@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 namespace Homework;
-internal class Course
+internal class Course : IEnumerable
 {
     private Student[] _course;
     public Course(Student[] student)
