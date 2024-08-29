@@ -1,13 +1,15 @@
-﻿namespace Homework;
+﻿using System.Diagnostics;
+
+namespace Homework;
 internal class Student
 {
     private string _name;
-    private readonly byte _grand;
-    public byte Grand {  get { return _grand; } }
+    private readonly byte _grade;
+    public byte Grade {  get { return _grade; } }
     public string Name { get { return _name; } }
-    public Student(string name, byte grand)
+    public Student(string name, byte grade)
     {
         _name = name;
-        _grand = grand;
+        _grade = grade;
     }
 }

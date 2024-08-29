@@ -27,7 +27,7 @@ namespace Homework
         {
             for (int i = _position + 1; i < _students.Length; i++)
             {
-                if (_students[i].Grand >= 80)
+                if (_students[i].Grade >= 80)
                 {
                     _position = i;
                     return true;
