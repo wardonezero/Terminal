@@ -1,10 +1,11 @@
 ﻿using System.Diagnostics;
 namespace Terminal;
-[DebuggerDisplay("First Name ={FirstName} and Age In Years = {AgeInYears}")]
+[DebuggerDisplay("First Name = {FirstName} and Age In Years = {AgeInYears}")]
 [DebuggerTypeProxy(typeof(ContactDebugDisplay))]
 internal class Contact
 {
-    public string? FirstName { get; set; }
+    [Display("FirstName: ", ConsoleColor.Green)]
+    public required string? FirstName { get; set; }
     [DebuggerBrowsable(DebuggerBrowsableState.Never)]
     public int AgeInYears { get; set; }
 }

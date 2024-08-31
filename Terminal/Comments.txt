@@ -272,3 +272,12 @@ foreach (var c in colors)
     WriteLine($"Color is {c}");
 }
 //Twenty-First
+//1
+Contact sarah = new()
+{
+    FirstName = "Sarah",
+    AgeInYears = 42
+};
+var sarahWriter = new ContactConsoleWriter(sarah);
+sarahWriter.Write();
+//Twenty-Second
