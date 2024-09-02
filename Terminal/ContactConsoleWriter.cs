@@ -17,14 +17,14 @@ internal class ContactConsoleWriter(Contact contact)
         WriteFirstName();
         WriteAge();
     }
-    private void WriteFirstName() 
+    private void WriteFirstName()
     {
         //WriteLine(contact.FirstName);
         PropertyInfo firstnameProperty = typeof(Contact).GetProperty(nameof(Contact.FirstName))!;
         var firstNamedisplayAttribute = (DisplayAttribute?)Attribute.GetCustomAttribute(firstnameProperty, typeof(DisplayAttribute));
         PreserveForegroundColor();
         var sb = new StringBuilder();
-        if(firstNamedisplayAttribute != null)
+        if (firstNamedisplayAttribute != null)
         {
             ForegroundColor = firstNamedisplayAttribute.Color;
             sb.Append(firstNamedisplayAttribute.Lable);
@@ -37,7 +37,12 @@ internal class ContactConsoleWriter(Contact contact)
     {
         WriteLine(contact.AgeInYears);
     }
-    private void UseDefaultColor() { ForegroundColor = ConsoleColor.Yellow; }
+    private void UseDefaultColor()
+    {
+        var defaultColorAttribute = (DefaultColorAttribute?)Attribute.GetCustomAttribute(typeof(Contact), typeof(DefaultColorAttribute));
+        if (defaultColorAttribute != null)
+            ForegroundColor = defaultColorAttribute.Color;
+    }
     private void PreserveForegroundColor() { _color = ForegroundColor; }
     private void RestoreForegroundColor() { ForegroundColor = _color; }
     //Attribute

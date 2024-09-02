@@ -2,6 +2,7 @@
 namespace Terminal;
 [DebuggerDisplay("First Name = {FirstName} and Age In Years = {AgeInYears}")]
 [DebuggerTypeProxy(typeof(ContactDebugDisplay))]
+[DefaultColor(Color = ConsoleColor.Magenta)]
 internal class Contact
 {
     [Display("FirstName: ", ConsoleColor.Green)]
