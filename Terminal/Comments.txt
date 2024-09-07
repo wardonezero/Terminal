@@ -336,3 +336,15 @@ void worker_WorkPerformed(object sender, WorkPerformedEventArgs e)
 {
     WriteLine($"Hours worked: {e.Hours.ToString()} {e.WorkType}");
 }
+//2
+string path = @"C:\Users\Administrator\Pictures\Screenshots";
+ShowlargrFileWithoutLinq(path);
+static void ShowlargrFileWithoutLinq(string path)
+{
+    DirectoryInfo directory = new DirectoryInfo(path);
+    FileInfo[] files = directory.GetFiles();
+    foreach (FileInfo item in files)
+    {
+        WriteLine($"{item.Name} : {item.Length}");
+    }
+}
