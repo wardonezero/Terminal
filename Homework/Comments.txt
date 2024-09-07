@@ -21,3 +21,10 @@ string stetment = "Wh-while you're waiting for the man who doesn't exist, would 
 Console.Write($"{stetment}\nThere are {stetment.HowManyWords()} words.");
 Saven
 1
+Seven
+1
+Course english = new Course();
+foreach(var student in english)
+{
+    WriteLine(student);
+}
