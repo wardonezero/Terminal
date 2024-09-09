@@ -1,6 +1,6 @@
 ﻿using Homework;
 using static System.Console;
-string path = @"C:\Users\MSI PC\Pictures\Screenshots";
+string path = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + @"\Pictures\Screenshots";
 ShowlargrFileWithoutLinq(path);
 static void ShowlargrFileWithoutLinq(string path)
 {
@@ -29,3 +29,4 @@ static FileInfo[] SortFiles(FileInfo[] folder)
     }
     return folder;
 }
+
