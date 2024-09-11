@@ -1,4 +1,4 @@
-﻿namespace Terminal.Methods;
+﻿namespace Terminal;
 internal class Penguin
 {
     int age = 0;

@@ -1,4 +1,4 @@
-﻿namespace Terminal.Methods;
+﻿namespace Terminal;
 internal class P
 {
     public string a { get; set; }
