@@ -410,3 +410,15 @@ using (foo.SuspendEvents())
 {
     Console.WriteLine("Main Version 2");
 }
+//Twenty-Nineth
+//1
+Process process = Process.GetCurrentProcess();
+string processName = Process.GetCurrentProcess().ProcessName;
+long ram = process.WorkingSet64;
+WriteLine($"Process Name: {processName}\nRam: {ram / 1024 / 1024}MB");
+//2
+Thread myThread = new(new ThreadStart(WorkingWithThreads.MyThreadMethod));
+myThread.IsBackground = false;
+myThread.Start();
+//myThread.Join();
+Console.WriteLine("Hello from main thread");
