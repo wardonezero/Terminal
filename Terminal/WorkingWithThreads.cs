@@ -1,5 +1,5 @@
 ﻿namespace Terminal;
-internal class WorkingWithThreads
+internal struct WorkingWithThreads
 {
     public static void MyThreadMethod()
     {

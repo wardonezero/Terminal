@@ -1,5 +1,6 @@
 ﻿namespace Terminal;
-internal class Test
+//DON'T USE THES
+internal stru GCTest
 {
     public void Dispose()
     {
@@ -10,5 +11,5 @@ internal class Test
     {
         if (disposing) { }
     }
-    ~Test() => Dispose(false);
+    ~GCTest() => Dispose(false);
 }
