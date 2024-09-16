@@ -1,6 +1,6 @@
 ﻿namespace Terminal;
 //DON'T USE THES
-internal stru GCTest
+internal class GCTest
 {
     public void Dispose()
     {

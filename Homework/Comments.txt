@@ -30,31 +30,37 @@ foreach(var student in english)
 }
 Eight
 string path = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + @"\Pictures\Screenshots";
-ShowlargrFileWithoutLinq(path);
-static void ShowlargrFileWithoutLinq(string path)
+ShowlargrFileWithLinq(path);
+static void ShowlargrFileWithLinq(string path)
 {
     DirectoryInfo directory = new(path);
     FileInfo[] files = directory.GetFiles();
-    SortFiles(files);
-    for (int i = 0; i < 5; i++)
+    IEnumerable<FileInfo> filesquery =
+        from file in files
+        orderby file.Length descending
+        select file;
+
+    //SortFiles(files);
+    foreach (var file in filesquery.Take(5))
     {
-        WriteLine($"{files[i].Name} : {files[i].Length / 1048576f:F2}MB");
+        WriteLine($"{file.Name} : {file.Length / 1048576f:F2}MB");
     }
 }
-static FileInfo[] SortFiles(FileInfo[] folder)
-{
-    FileInfo temp;
-    for (int i = 0; i < folder.Length; i++)
-    {
-        for (int j = i + 1; j < folder.Length; j++)
-        {
-            if (folder[i].Length < folder[j].Length)
-            {
-                temp = folder[i];
-                folder[i] = folder[j];
-                folder[j] = temp;
-            }
-        }
-    }
-    return folder;
-}
+//Sorter with for loops low lvl programming
+//static FileInfo[] SortFiles(FileInfo[] folder)
+//{
+//    FileInfo temp;
+//    for (int i = 0; i < folder.Length; i++)
+//    {
+//        for (int j = i + 1; j < folder.Length; j++)
+//        {
+//            if (folder[i].Length < folder[j].Length)
+//            {
+//                temp = folder[i];
+//                folder[i] = folder[j];
+//                folder[j] = temp;
+//            }
+//        }
+//    }
+//    return folder;
+//}

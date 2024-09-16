@@ -5,7 +5,7 @@ using static System.Console;
 //1
 //2
 Thread myThread = new(new ThreadStart(WorkingWithThreads.MyThreadMethod));
-myThread.IsBackground = false;
+//myThread.IsBackground = false;
 myThread.Start();
 //myThread.Join();
-Console.WriteLine("Hello from main thread");
+WriteLine("Hello from main thread");
