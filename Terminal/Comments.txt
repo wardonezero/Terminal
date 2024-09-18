@@ -422,3 +422,6 @@ myThread.IsBackground = false;
 myThread.Start();
 //myThread.Join();
 Console.WriteLine("Hello from main thread");
+//Thirtieth
+//p =np movie
+//turring movie
