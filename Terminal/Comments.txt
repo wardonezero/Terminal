@@ -1,52 +1,64 @@
-//One
-/*//1
-//double R;
-//string? xy;
-//double x;
-//double y;
-//Random random = new Random();
-//R = random.Next(0,5);
-//Console.Write("Enter (x,y): ");
-//xy = Console.ReadLine();
-//string[] coord = xy.Split(',', ' ', '.');
-//x = double.Parse(coord[0].ToString());
-//y = double.Parse(coord[1].ToString());
-//bool IsNumberX = double.TryParse(x.ToString(), out x);
-//bool IsNumberY = double.TryParse(x.ToString(), out y);
-//if (IsNumberX && IsNumberY)
-//{
-//    if (R * R == (x * x) + (y * y))
-//    {
-//        Console.WriteLine("The coordinates in the circle");
-//    }
-//    else
-//    {
-//        Console.WriteLine("The coordinates not in the circle");
-//    }
-//}
-//else { Console.WriteLine("Wrong, try agin"); }*/
+//#One 1
+
+//1
+double R;
+string? xy;
+double x;
+double y;
+Random random = new Random();
+R = random.Next(0,5);
+Console.Write("Enter (x,y): ");
+xy = Console.ReadLine();
+string[] coord = xy.Split(',', ' ', '.');
+x = double.Parse(coord[0].ToString());
+y = double.Parse(coord[1].ToString());
+bool IsNumberX = double.TryParse(x.ToString(), out x);
+bool IsNumberY = double.TryParse(x.ToString(), out y);
+if (IsNumberX && IsNumberY)
+{
+    if (R * R == (x * x) + (y * y))
+    {
+        Console.WriteLine("The coordinates in the circle");
+    }
+    else
+    {
+        Console.WriteLine("The coordinates not in the circle");
+    }
+}
+else { Console.WriteLine("Wrong, try agin"); }
+
 //2
 //PrintMultiplicationTable();
-//Two
+
+//#Two 2
+
 //1
 //CalculateVAT();
+
 //2
 //ToOrdinlNumber();
-//Three
+
+//#Three 3
+
 //1
 //Paint();
+
 //2
 //PaintTriangle();
-//Four
-//Five
-//Six
+
+//#Four 4
+//#Five 5
+//#Six 6
+
 //Penguin pingvin1 = new Penguin(2.4, "Yellow");
-//Seven
-//Eight
-//Nine
-//Ten
+
+//#Seven 7
+//#Eight 8
+//#Nine 9
+//#Ten 10
+
 //1
-/*int age;
+int age;
 Write("Enter your age:");
 string input = ReadLine();
 WriteLine("Before");
@@ -66,7 +78,8 @@ catch (Exception ex)
 {
     WriteLine($"{ex.GetType()} says {ex.Message}");
 }
-WriteLine("After");*/
+WriteLine("After");
+
 //2
 try
 {
@@ -87,10 +100,12 @@ catch(OverflowException)
 {
     WriteLine($"The code overflowed but I caught the exception");
 }
-//Eleven
-//Twelve
-//Thirteenth
-//Fourteenth
+
+//#Eleven 11
+//#Twelve 12
+//#Thirteenth 13
+//#Fourteenth 14
+
 //int i = 123;
 //object o = i;
 //try
@@ -151,14 +166,18 @@ WriteLine($"Addres of y3a:{pY3a.ToString()}");
 GCHandle gchY3b = GCHandle.Alloc(y3.b, GCHandleType.Pinned);
 IntPtr pY3b = gchY3b.AddrOfPinnedObject();
 WriteLine($"Addres of y3b:{pY3b.ToString()}");*/
-//Fifteenth
+
+//#Fifteenth 15
+
 //1
 Square object1 = new(24);
 WriteLine($"Area of the square is {object1.GetArea()}");
+
 //2
 DerivedClass object2 = new DerivedClass();
 object2.AbstractMethod();
 WriteLine($"X = {object2.X} Y = {object2.Y}");
+
 //3
 ImplementationClass object3 = new ImplementationClass();
 object3.SampleMethod();
@@ -179,7 +198,9 @@ else
 {
     WriteLine("Class a and b do not implement any interface");
 }
-//Sixteenth
+
+//Sixteenth 16
+
 //1
 WriteLine("****How the animals sounds****");
 //Tiger tiger = new Tiger();
@@ -188,6 +209,7 @@ WriteLine("****How the animals sounds****");
 //dog.Sound();
 //Monkey monkey = new Monkey();
 //monkey.Sound();
+
 //2
 //ISound animal = new Tiger();
 //animal.Sound();
@@ -195,6 +217,7 @@ WriteLine("****How the animals sounds****");
 //animal.Sound();
 //animal = new Monkey();
 //animal.Sound();
+
 //3
 //List<ISound> animls =
 //[
@@ -206,6 +229,7 @@ WriteLine("****How the animals sounds****");
 //{
 //    animal.Sound();
 //}
+
 //4
 ISound animal = GetAnimal();
 //animal.Sound();
@@ -214,12 +238,14 @@ ISound animal = GetAnimal();
 //animal = GetAnimal();
 //animal.Sound();
 //animal = GetAnimal();
+
 //5
 MakeSound(animal);
 animal = GetAnimal();
 MakeSound(animal);
 animal = GetAnimal();
 MakeSound(animal);
+
 //6
 static ISound GetAnimal()
 {
@@ -238,16 +264,21 @@ static void MakeSound(ISound animal)
 {
     animal.Sound();
 }
-//Seventeenth
-//Eighteenth
+
+//#Sixteenth 16
+//#Seventeenth 17
+//#Eighteenth 18
+
 //1
-//Car car = new();
-//string color = car.CarColor();
-//WriteLine(color);
-//WriteLine(car.CarColor());
-////2
-//string ch = "aabdbaa";
-//WriteLine(ch.IsPaliandrom());
+Car car = new();
+string color = car.CarColor();
+WriteLine(color);
+WriteLine(car.CarColor());
+
+//2
+string ch = "aabdbaa";
+WriteLine(ch.IsPaliandrom());
+
 //3
 int sn = 0;
 while (true)
@@ -256,14 +287,16 @@ while (true)
     sn++;
     if (sn == 1000) break;
 }
-//Nineteenth
-//Twentieth
+//#Nineteenth 19
+//#Twentieth 20
+
 //1
 Garage carLot = new();
 foreach (Car c in carLot)
 {
     WriteLine($"Car {c.Name} is going {c.Speed} ");
 }
+
 //2
 Spectrum colors = new Spectrum();
 foreach (var c in colors)
@@ -271,7 +304,9 @@ foreach (var c in colors)
 
     WriteLine($"Color is {c}");
 }
-//Twenty-First
+
+//#Twenty-First 21
+
 //1
 Contact sarah = new()
 {
@@ -280,7 +315,9 @@ Contact sarah = new()
 };
 var sarahWriter = new ContactConsoleWriter(sarah);
 sarahWriter.Write();
-//Twenty-Second
+
+//#Twenty-Second 22
+
 //1
 Contact sarah = new()
 {
@@ -289,9 +326,13 @@ Contact sarah = new()
 };
 var sarahWriter = new ContactConsoleWriter(sarah);
 sarahWriter.Write();
-//Twenty-Third
+
+//#Twenty-Third 23
+
 /pipeline/delegate/to trriger/eventargas/sender/
-//Twenty-Fourth
+
+//#Twenty-Fourth 24
+
 //1
 WorkPerformedHandler del1 = new(WorkPerformed1);
 WorkPerformedHandler del2 = new(WorkPerformed2);
@@ -325,7 +366,9 @@ static int WorkPerformed3(int hours, WorkType workType)
 //{
 //    del(6, WorkType.Meeting);
 //}
-//Twenty-fifth
+
+//#Twenty-fifth 25
+
 //1
 var worker = new Worker();
 worker.WorkPerformed += new EventHandler<WorkPerformedEventArgs>(worker_WorkPerformed);
@@ -336,6 +379,7 @@ void worker_WorkPerformed(object sender, WorkPerformedEventArgs e)
 {
     WriteLine($"Hours worked: {e.Hours.ToString()} {e.WorkType}");
 }
+
 //2
 string path = @"C:\Users\Administrator\Pictures\Screenshots";
 ShowlargrFileWithoutLinq(path);
@@ -348,7 +392,9 @@ static void ShowlargrFileWithoutLinq(string path)
         WriteLine($"{item.Name} : {item.Length}");
     }
 }
-//Twenty-Sixth
+
+//#Twenty-Sixth 26
+
 //1
 string path = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + @"\Pictures\Screenshots";
 ShowlargrFileWithoutLinq(path);
@@ -373,6 +419,7 @@ static void ShowlargeFileWithLinq(string path)
         WriteLine($"{file.Name,-50} : {file.Length,10:N0}");
     }
 }
+
 //2
 Student[] students =
 [
@@ -393,7 +440,9 @@ foreach(var q in query)
 {
     Console.WriteLine($"Student taking History: {q}");
 }
-//Twenty-Eighth
+
+//#Twenty-Seventh 27
+
 //1
 WriteLine("Dude");
 Foo foo = new Foo();
@@ -410,18 +459,23 @@ using (foo.SuspendEvents())
 {
     Console.WriteLine("Main Version 2");
 }
-//Twenty-Nineth
+
+//#Twenty-Eighth 28
+
 //1
 Process process = Process.GetCurrentProcess();
 string processName = Process.GetCurrentProcess().ProcessName;
 long ram = process.WorkingSet64;
 WriteLine($"Process Name: {processName}\nRam: {ram / 1024 / 1024}MB");
+
 //2
 Thread myThread = new(new ThreadStart(WorkingWithThreads.MyThreadMethod));
 myThread.IsBackground = false;
 myThread.Start();
 //myThread.Join();
 Console.WriteLine("Hello from main thread");
-//Thirtieth
+
+//#Twenty-Ninth 29
+//#Thirtieth 30
 //p =np movie
 //turring movie
