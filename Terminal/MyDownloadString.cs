@@ -8,14 +8,14 @@ internal class MyDownloadString
         {
         const int LargeNumber = 6_000_000;
         sw.Start();
-        Task<int> t1 = (CountCharactersAsync(1, "https://www.microsoft.com"));
-        Task<int> t2 = CountCharactersAsync(2, "https://www.aasdevel.com");
+        Task<int> t1 = CountCharactersAsync(1, "https://github.com/wardonezero/Chess");
+        Task<int> t2 = CountCharactersAsync(2, "https://github.com/wardonezero");
         CountToALargeNumber(1, LargeNumber);
         CountToALargeNumber(2, LargeNumber);
         CountToALargeNumber(3, LargeNumber);
         CountToALargeNumber(4, LargeNumber);
-        Console.WriteLine($"Chars in https://www.microsoft.com : {t1.Result}");
-        Console.Write($"Chars in https://www.aasdevel.com : {t2.Result}");
+        Console.WriteLine($"Chars in https://github.com/wardonezero/Chess : {t1.Result}");
+        Console.WriteLine($"Chars in https://github.com/wardonezero : {t2.Result}");
 
     }
     //private int CountCharacters(int id , string uriString)

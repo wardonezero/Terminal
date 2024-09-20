@@ -477,6 +477,10 @@ Console.WriteLine("Hello from main thread");
 
 //#Twenty-Ninth 29
 
+//1
+MyDownloadString ds = new MyDownloadString();
+ds.DoRun();
+
 //p =np movie
 //turring movie
 

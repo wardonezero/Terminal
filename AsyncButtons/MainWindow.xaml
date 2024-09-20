@@ -5,14 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AsyncButtons"
         mc:Ignorable="d"
-        Title="MainWindow" Height="240" Width="240">
+        Title="AsyncButtons" Height="255" Width="400" Background="#FF101000">
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Button_Click" Margin="20,20,0,0" Height="40"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="20,80,0,0" VerticalAlignment="Top" Click="Button_Click_1" Height="40"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="20,140,0,0" VerticalAlignment="Top" Click="Button_Click_2" Height="40"/>
-        <Label Name = "lbl1" Content="Label" HorizontalAlignment="Left" Margin="120,140,0,0" VerticalAlignment="Top" Height="40"/>
-        <Label Name = "lbl2" Content="Label" HorizontalAlignment="Left" Margin="120,80,0,0" VerticalAlignment="Top" Height="40"/>
-        <Label Name = "lbl3" Content="Label" HorizontalAlignment="Left" Margin="120,20,0,0" VerticalAlignment="Top" Height="40"/>
-
+        <Button Content="Button" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Click="Button_Click_1" Height="40" Width="80" BorderBrush="#FFCCCC00" Background="#FF393939" FontSize="14" FontFamily="Verdana"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="20,80,0,0" VerticalAlignment="Top" Click="Button_Click_2" Height="40" Width="80" BorderBrush="#FFCCCC00" Background="#FF393939" FontSize="14" FontFamily="Verdana"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="20,140,0,0" VerticalAlignment="Top" Click="Button_Click_3" Height="40" Width="80" BorderBrush="#FFCCCC00" Background="#FF393939" FontSize="14" FontFamily="Verdana"/>
+        <Label Name = "lbl1" Content="Label" HorizontalAlignment="Left" Margin="140,20,0,0" VerticalAlignment="Top" Height="40" Width="160" Foreground="#FFCCCC00" FontFamily="Verdana" FontSize="14" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <Label Name = "lbl2" Content="Label" HorizontalAlignment="Left" Margin="140,80,0,0" VerticalAlignment="Top" Height="40" Width="160" Foreground="#FFCCCC00" FontFamily="Verdana" FontSize="14" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <Label Name = "lbl3" Content="Label" HorizontalAlignment="Left" Margin="140,140,0,0" VerticalAlignment="Top" Height="40" Width="160" Foreground="#FFCCCC00" FontFamily="Verdana" FontSize="14" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
     </Grid>
 </Window>
