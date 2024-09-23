@@ -1,4 +1,6 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
+using System.Xml.Linq;
 
 namespace Terminal;//datastructure
 class MyLinkedList<T> : ICollection<T>
@@ -6,28 +8,43 @@ class MyLinkedList<T> : ICollection<T>
     public MyLinkedListNode<T>? Head { get; private set; }
     public MyLinkedListNode<T>? Tail { get; private set; }
     #region ICollection
-    public int Count { get; private set; }
+    public int Count { get; private set; }//done
 
-    public bool IsReadOnly => false;
+    public bool IsReadOnly => false;//done
 
-    public void Add(T item)
+    public void Add(T item)//done
     {
         AddFirst(item);
     }
 
-    public void Clear()
+    public void Clear()//done
     {
-        throw new NotImplementedException();
+        Head = null;
+        Tail = null;
+        Count = 0;
     }
 
-    public bool Contains(T item)
+    public bool Contains(T item)//done
     {
-        throw new NotImplementedException();
+        MyLinkedListNode<T> current = Head;
+        while (current != null)
+        {
+            if (current.Value.Equals(item))
+                return true;
+            current = current.Next;
+
+        }
+        return false;
     }
 
-    public void CopyTo(T[] array, int arrayIndex)
+    public void CopyTo(T[] array, int arrayIndex)//done
     {
-        throw new NotImplementedException();
+        MyLinkedListNode<T> current = Head;
+        while (current != null)
+        {
+            array[arrayIndex] = current.Value;
+            current = current.Next;
+        }
     }
 
     public IEnumerator<T> GetEnumerator()
@@ -46,11 +63,11 @@ class MyLinkedList<T> : ICollection<T>
     }
     #endregion
     #region Add
-    public void AddFirst(T item)
+    public void AddFirst(T item)//done
     {
         AddFirst(new MyLinkedListNode<T>(item));
     }
-    private void AddFirst(MyLinkedListNode<T> node)
+    private void AddFirst(MyLinkedListNode<T> node)//done
     {
         MyLinkedListNode<T>? temp = Head;
         Head = node;
@@ -60,23 +77,43 @@ class MyLinkedList<T> : ICollection<T>
             Tail = Head;
     }
 
-    public void AddLast(T item)
+    public void AddLast(T item)//done
     {
         AddLast(new MyLinkedListNode<T>(item));
     }
-    private void AddLast(MyLinkedListNode<T> node)
+    private void AddLast(MyLinkedListNode<T> node)//done
     {
-        MyLinkedListNode<T>? temp = Tail;
-        Tail.Next = node.Next;
+        if (Count == 0) Head = node;
+        else Tail.Next = node;
         Tail = node;
+        Count++;
     }
     #endregion
-    public static void PrintMyList()
+    #region Remove
+    public void RemoveFirst()//done
     {
-        while (Tail.Next != null)
+        if (Count != 0)
         {
-            Console.WriteLine();
-            Tail.Next();
+            Head = Head.Next;
+            Count--;
         }
+        if (Count == 0) Tail = null;
     }
+    public void RemoveLast()//done
+    {
+        if (Count != 0)
+        {
+            while (!Head.Next.Equals(Tail))
+            {
+                if(Head.Next != null)
+                {
+                    Tail = Head.Next;
+                }
+            }
+            Count--;
+        }
+        if (Count == 0) Tail = null;
+    }
+    #endregion
+    
 }
