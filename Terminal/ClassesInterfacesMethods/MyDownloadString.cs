@@ -3,7 +3,7 @@ using System.Net;
 namespace Terminal;
 internal class MyDownloadString
 {
-        Stopwatch sw = new Stopwatch();
+        readonly Stopwatch sw = new();
         public void DoRun()
         {
         const int LargeNumber = 6_000_000;

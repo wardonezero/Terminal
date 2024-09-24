@@ -12,10 +12,7 @@ class MyLinkedList<T> : ICollection<T>
 
     public bool IsReadOnly => false;//done
 
-    public void Add(T item)//done
-    {
-        AddFirst(item);
-    }
+    public void Add(T item) => AddFirst(item);//done
 
     public void Clear()//done
     {
@@ -26,7 +23,7 @@ class MyLinkedList<T> : ICollection<T>
 
     public bool Contains(T item)//done
     {
-        MyLinkedListNode<T> current = Head;
+        MyLinkedListNode<T>? current = Head;
         while (current != null)
         {
             if (current.Value.Equals(item))
@@ -39,7 +36,7 @@ class MyLinkedList<T> : ICollection<T>
 
     public void CopyTo(T[] array, int arrayIndex)//done
     {
-        MyLinkedListNode<T> current = Head;
+        MyLinkedListNode<T>? current = Head;
         while (current != null)
         {
             array[arrayIndex] = current.Value;
@@ -63,10 +60,7 @@ class MyLinkedList<T> : ICollection<T>
     }
     #endregion
     #region Add
-    public void AddFirst(T item)//done
-    {
-        AddFirst(new MyLinkedListNode<T>(item));
-    }
+    public void AddFirst(T item) => AddFirst(new MyLinkedListNode<T>(item));//done
     private void AddFirst(MyLinkedListNode<T> node)//done
     {
         MyLinkedListNode<T>? temp = Head;
@@ -77,10 +71,7 @@ class MyLinkedList<T> : ICollection<T>
             Tail = Head;
     }
 
-    public void AddLast(T item)//done
-    {
-        AddLast(new MyLinkedListNode<T>(item));
-    }
+    public void AddLast(T item) => AddLast(new MyLinkedListNode<T>(item));
     private void AddLast(MyLinkedListNode<T> node)//done
     {
         if (Count == 0) Head = node;
@@ -103,17 +94,22 @@ class MyLinkedList<T> : ICollection<T>
     {
         if (Count != 0)
         {
-            while (!Head.Next.Equals(Tail))
+            while (Head.Next != null)
             {
-                if(Head.Next != null)
-                {
                     Tail = Head.Next;
-                }
             }
             Count--;
         }
         if (Count == 0) Tail = null;
     }
     #endregion
-    
+
+    //public static void PrintMyList(MyLinkedListNode<int> node)//done
+    //{
+    //    while (node != null)
+    //    {
+    //        Console.WriteLine(node.Value);
+    //        node = node.Next;
+    //    }
+    //}
 }

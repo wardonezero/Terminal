@@ -1,15 +1,29 @@
-﻿using System.Diagnostics;
-using System.Diagnostics.CodeAnalysis;
-using System.Collections;
+﻿using System.Collections.Generic;
 using Terminal;
 using static System.Console;
 //1
-MyLinkedList<int> d = [5, 8, 3, 4, 7, 9, 2, 1];
- static void PrintMyList(MyLinkedListNode<T> node)//done
+MyLinkedList<int> ints = new();
+ints.AddFirst(1);
+PrintMyList(ints.Head);
+ints.AddLast(200);
+PrintMyList(ints.Head);
+ints.AddFirst(4);
+PrintMyList(ints.Head);
+ints.AddLast(2);
+PrintMyList(ints.Head);
+ints.AddFirst(2);
+PrintMyList(ints.Head);
+ints.RemoveFirst();
+PrintMyList(ints.Head);
+ints.RemoveLast();
+PrintMyList(ints.Head);
+static void PrintMyList(MyLinkedListNode<int> node)//done
 {
+    Write('[');
     while (node != null)
     {
-        Console.WriteLine(node.Value);
+        Write($" {node.Value} ");
         node = node.Next;
     }
+    WriteLine(']');
 }
