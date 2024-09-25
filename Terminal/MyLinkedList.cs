@@ -46,7 +46,12 @@ class MyLinkedList<T> : ICollection<T>
 
     public IEnumerator<T> GetEnumerator()
     {
-        throw new NotImplementedException();
+        MyLinkedListNode<T>? current = Head;
+        while (current != null)
+        {
+            yield return current.Value;
+            current = current.Next;
+        }
     }
 
     public bool Remove(T item)
@@ -54,10 +59,7 @@ class MyLinkedList<T> : ICollection<T>
         throw new NotImplementedException();
     }
 
-    IEnumerator IEnumerable.GetEnumerator()
-    {
-        throw new NotImplementedException();
-    }
+    IEnumerator IEnumerable.GetEnumerator() => ((IEnumerable<T>)this).GetEnumerator();
     #endregion
     #region Add
     public void AddFirst(T item) => AddFirst(new MyLinkedListNode<T>(item));//done
@@ -94,22 +96,34 @@ class MyLinkedList<T> : ICollection<T>
     {
         if (Count != 0)
         {
-            while (Head.Next != null)
+            if (Count == 1)
             {
-                    Tail = Head.Next;
+                Head = null;
+                Tail = null;
+            }
+            else
+            {
+                MyLinkedListNode<T>? current = Head;
+                while (current.Next != Tail)
+                {
+                    current = current.Next;
+                }
+                Tail = current;
+                Tail.Next = null;
             }
             Count--;
         }
-        if (Count == 0) Tail = null;
     }
     #endregion
 
-    //public static void PrintMyList(MyLinkedListNode<int> node)//done
-    //{
-    //    while (node != null)
-    //    {
-    //        Console.WriteLine(node.Value);
-    //        node = node.Next;
-    //    }
-    //}
+    public static void PrintMyList(MyLinkedListNode<T>? node)//done
+    {
+        Console.Write('[');
+        while (node != null)
+        {
+            Console.Write($" {node.Value} ");
+            node = node.Next;
+        }
+        Console.WriteLine(']');
+    }
 }

@@ -486,4 +486,22 @@ ds.DoRun();
 
 //#Thirtieth 30
 
-//#Thirty-First
+//#Thirty-First 31
+//1
+MyLinkedList<int> ints = new();
+ints.AddFirst(2);
+MyLinkedList<int>.PrintMyList(ints.Head);
+ints.AddLast(3);
+MyLinkedList<int>.PrintMyList(ints.Head);
+ints.AddFirst(1);
+MyLinkedList<int>.PrintMyList(ints.Head);
+ints.AddLast(4);
+MyLinkedList<int>.PrintMyList(ints.Head);
+ints.AddFirst(2);
+MyLinkedList<int>.PrintMyList(ints.Head);
+ints.RemoveFirst();
+MyLinkedList<int>.PrintMyList(ints.Head);
+ints.RemoveLast();
+MyLinkedList<int>.PrintMyList(ints.Head);
+
+//#Thirty-Second 32
