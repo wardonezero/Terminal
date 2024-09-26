@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homework", "Homework\Homewo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Terminal.Test", "Terminal.Test\Terminal.Test.csproj", "{EA0A5ECF-4EEA-44E5-8636-0F836E344EE3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncButtons", "AsyncButtons\AsyncButtons.csproj", "{A8CA5C1B-3108-4152-9595-AEF0D18F2553}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncButtons", "AsyncButtons\AsyncButtons.csproj", "{A8CA5C1B-3108-4152-9595-AEF0D18F2553}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDataStructure", "MyDataStructure\MyDataStructure.csproj", "{11ADE8F3-05B6-4D89-AE08-4EF7F04805F4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -58,6 +60,12 @@ Global
 		{A8CA5C1B-3108-4152-9595-AEF0D18F2553}.EXTRA|Any CPU.Build.0 = Debug|Any CPU
 		{A8CA5C1B-3108-4152-9595-AEF0D18F2553}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8CA5C1B-3108-4152-9595-AEF0D18F2553}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11ADE8F3-05B6-4D89-AE08-4EF7F04805F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11ADE8F3-05B6-4D89-AE08-4EF7F04805F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11ADE8F3-05B6-4D89-AE08-4EF7F04805F4}.EXTRA|Any CPU.ActiveCfg = Debug|Any CPU
+		{11ADE8F3-05B6-4D89-AE08-4EF7F04805F4}.EXTRA|Any CPU.Build.0 = Debug|Any CPU
+		{11ADE8F3-05B6-4D89-AE08-4EF7F04805F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11ADE8F3-05B6-4D89-AE08-4EF7F04805F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

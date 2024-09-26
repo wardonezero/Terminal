@@ -4,7 +4,7 @@ namespace Terminal;
 internal class PostfixCalculator
 {
     string[] input = ["4", "2", "6", "*", "+", "8", "-", "2"];
-    MyStack<double> mystack = new();
+    public MyStack<double> mystack = new();
     public void Postfix()
     {
         foreach (var token in input)
@@ -21,16 +21,16 @@ internal class PostfixCalculator
                 switch (token)
                 {
                     case "+":
-                        answer = right + left;
+                        answer = left + right;
                         break;
                     case "-":
-                        answer = right + left;
+                        answer = left - right;
                         break;
                     case "*":
-                        answer = right + left;
+                        answer = left * right;
                         break;
                     case "/":
-                        answer = right + left;
+                        answer = left / right;
                         break;
                     default:
                         break;
