@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Xml.Linq;
 
-namespace Terminal;//datastructure
+namespace MyDataStructure;//datastructure
 public class MyLinkedList<T> : ICollection<T>
 {
     public MyLinkedListNode<T>? Head { get; private set; }
