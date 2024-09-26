@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using MyDataStructure;
 namespace Terminal;
 class MyStack<T> : IEnumerable<T>
 {
