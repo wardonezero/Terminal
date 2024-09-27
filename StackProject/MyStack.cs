@@ -1,9 +1,9 @@
 ﻿using System.Collections;
 using MyDataStructure;
-namespace Terminal;
-class MyStack<T> : IEnumerable<T>
+namespace StackProject;
+public class MyStack<T> : IEnumerable<T>
 {
-    private MyLinkedList<T> _list = [];
+    private MyLinkedList<T> _list = new MyLinkedList<T>();
     public void Push(T item) => _list.AddFirst(item);
     public T Pop()
     {
@@ -13,7 +13,7 @@ class MyStack<T> : IEnumerable<T>
         _list.RemoveFirst();
         return value;
     }
-    public void Peek(T item) { }
+    public T Peek() => _list.Head.Value;
     public int Count => _list.Count;
     public void Clear() { }
     public IEnumerator<T> GetEnumerator()=>_list.GetEnumerator();

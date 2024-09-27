@@ -1,0 +1,21 @@
+﻿<Window x:Class="VisualQueueWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VisualQueueWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="300" Width="400">
+    <Grid Background="#FF202020">
+        <Label Name="lable0" Content="Label" Width="60" Height="60" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,20,0,0" BorderBrush="Black" BorderThickness="1,1,1,1"/>
+        <Label Name="lable1" Content="Label" Width="60" Height="60" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="80,20,0,0" BorderThickness="0,1,1,1" BorderBrush="Black"/>
+        <Label Name="lable2" Content="Label" Width="60" Height="60" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="140,20,0,0" BorderBrush="Black" BorderThickness="0,1,1,1"/>
+        <Label Name="lable3" Content="Label" Width="60" Height="60" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200,20,0,0" BorderBrush="Black" BorderThickness="0,1,1,1"/>
+        <Label Name="lable4" Content="Label" Width="60" Height="60" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="260,20,0,0" BorderBrush="Black" BorderThickness="0,1,1,1"/>
+        <Label Name="lable5" Content="Label" Width="60" Height="60" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="320,20,0,0" BorderBrush="Black" BorderThickness="0,1,1,1"/>
+        <Button Name="Enq" Content="Enqueue" HorizontalAlignment="Left" Margin="20,100,0,0" VerticalAlignment="Top" Height="30" Width="80" FontFamily="Verdana" FontSize="16" BorderBrush="#FF00CC00" Background="#FF404040" Click="DoEnqueue"/>
+        <Button Name ="Deq" Content="Dequeue" HorizontalAlignment="Left" Margin="140,100,0,0" VerticalAlignment="Top" Height="30" Width="80" FontFamily="Verdana" FontSize="16" Background="#FF404040" BorderBrush="#FFCC0000" Click="DoDequeue"/>
+        <ListBox Name="listbox" d:ItemsSource="{d:SampleData ItemCount=5}" Width="120" Height="120" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0,0,20,20" Background="#FF707070" BorderBrush="#FF00CCCC"/>
+
+    </Grid>
+</Window>

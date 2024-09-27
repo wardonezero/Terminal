@@ -1,0 +1,26 @@
+﻿using MyDataStructure;
+using System.Collections;
+namespace QueueProject;
+public class MyQueue<T> : IEnumerable<T>
+{
+    MyLinkedList<T> _queue = new MyLinkedList<T>();
+
+    public void Enqueue(T item) => _queue.AddLast(item);
+    public T Dequeue()
+    {
+        if (_queue.Count == 0)
+            throw new InvalidOperationException("The queue is empty");
+        T value = _queue.Head.Next.Value;
+        _queue.RemoveFirst();
+        return value;
+    }
+
+    public T Peek() => _queue.Head.Value;
+
+    public int Count => _queue.Count;
+    public void Clear() { }
+
+    public IEnumerator<T> GetEnumerator() => _queue.GetEnumerator();
+
+    IEnumerator IEnumerable.GetEnumerator() => _queue.GetEnumerator();
+}

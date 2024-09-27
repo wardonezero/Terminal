@@ -1,7 +1,7 @@
 ﻿namespace Terminal;
 internal class Penguin
 {
-    int age = 0;
+    int age;
     double m;
     string color;
     public Penguin()
@@ -11,6 +11,7 @@ internal class Penguin
     }
     public Penguin(double m, string color)
     {
+        
         this.m = m;
         this.color = color;
     }

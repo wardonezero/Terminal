@@ -505,3 +505,12 @@ ints.RemoveLast();
 MyLinkedList<int>.PrintMyList(ints.Head);
 
 //#Thirty-Second 32
+//1
+PostfixCalculator num = new();
+num.Postfix();
+foreach(var n in num.mystack)
+{
+    WriteLine(n);
+}
+
+//#Thirty-Third 33
