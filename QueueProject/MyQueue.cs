@@ -10,7 +10,7 @@ public class MyQueue<T> : IEnumerable<T>
     {
         if (_queue.Count == 0)
             throw new InvalidOperationException("The queue is empty");
-        T value = _queue.Head.Next.Value;
+        T value = _queue.Head.Value;
         _queue.RemoveFirst();
         return value;
     }
@@ -19,6 +19,8 @@ public class MyQueue<T> : IEnumerable<T>
 
     public int Count => _queue.Count;
     public void Clear() { }
+
+    public MyLinkedListNode<T> GetHead()=>_queue.Head;
 
     public IEnumerator<T> GetEnumerator() => _queue.GetEnumerator();
 

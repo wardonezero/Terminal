@@ -1,5 +1,6 @@
 ﻿using MyDataStructure;
 using QueueProject;
+using System.Reflection.Emit;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -36,13 +37,25 @@ namespace VisualQueueWPF
             if (_list.Count > 0)
             {
                 listbox.Items.Add(_list.Dequeue().ToString());
+                UpdateGrid();
             }
         }
 
         private void UpdateGrid()
         {
-            MyLinkedListNode<int> current = _list.Peek();
-            lable0.Content = _list.Peek();
+            System.Windows.Controls.Label[] labels = { label0, label1, label2, label3, label4, label5 };
+            MyLinkedListNode<int> current = _list.GetHead();
+            for (int i = 0; i < 6; i++)
+            {
+                if (current != null && _list.Count > 0)
+                {
+                    labels[i].Content = current.Value;
+                    current = current.Next;
+                }
+                else
+                    labels[i].Content = ' ';
+            }
+
         }
     }
 }
