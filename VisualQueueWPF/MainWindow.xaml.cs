@@ -53,12 +53,8 @@ namespace VisualQueueWPF
                     current = current.Next;
                 }
                 else
-                {
                     labels[i].Content = ' ';
-                    break;
-                }
             }
 
-        }
     }
 }

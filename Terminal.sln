@@ -15,13 +15,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Terminal.Test", "Terminal.T
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncButtons", "AsyncButtons\AsyncButtons.csproj", "{A8CA5C1B-3108-4152-9595-AEF0D18F2553}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDataStructure", "MyDataStructure\MyDataStructure.csproj", "{11ADE8F3-05B6-4D89-AE08-4EF7F04805F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyDataStructure", "MyDataStructure\MyDataStructure.csproj", "{11ADE8F3-05B6-4D89-AE08-4EF7F04805F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueProject", "QueueProject\QueueProject.csproj", "{7FD78C40-193F-4EDB-A3EA-40694FB5585D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QueueProject", "QueueProject\QueueProject.csproj", "{7FD78C40-193F-4EDB-A3EA-40694FB5585D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackProject", "StackProject\StackProject.csproj", "{A4C7AF60-50BB-4BC7-B482-97A40C646CD9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StackProject", "StackProject\StackProject.csproj", "{A4C7AF60-50BB-4BC7-B482-97A40C646CD9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisualQueueWPF", "VisualQueueWPF\VisualQueueWPF.csproj", "{4594B299-2BFC-4FE0-98EA-85E119B77A59}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VisualQueueWPF", "VisualQueueWPF\VisualQueueWPF.csproj", "{4594B299-2BFC-4FE0-98EA-85E119B77A59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryTreeProject", "BinaryTree\BinaryTreeProject.csproj", "{691E90CA-575A-45B4-9FF6-60AA7867B07B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -90,6 +92,12 @@ Global
 		{4594B299-2BFC-4FE0-98EA-85E119B77A59}.EXTRA|Any CPU.Build.0 = Debug|Any CPU
 		{4594B299-2BFC-4FE0-98EA-85E119B77A59}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4594B299-2BFC-4FE0-98EA-85E119B77A59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{691E90CA-575A-45B4-9FF6-60AA7867B07B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{691E90CA-575A-45B4-9FF6-60AA7867B07B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{691E90CA-575A-45B4-9FF6-60AA7867B07B}.EXTRA|Any CPU.ActiveCfg = Debug|Any CPU
+		{691E90CA-575A-45B4-9FF6-60AA7867B07B}.EXTRA|Any CPU.Build.0 = Debug|Any CPU
+		{691E90CA-575A-45B4-9FF6-60AA7867B07B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{691E90CA-575A-45B4-9FF6-60AA7867B07B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
