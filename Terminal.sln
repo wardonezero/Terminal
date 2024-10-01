@@ -23,7 +23,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StackProject", "StackProjec
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VisualQueueWPF", "VisualQueueWPF\VisualQueueWPF.csproj", "{4594B299-2BFC-4FE0-98EA-85E119B77A59}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryTreeProject", "BinaryTree\BinaryTreeProject.csproj", "{691E90CA-575A-45B4-9FF6-60AA7867B07B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinaryTreeProject", "BinaryTreeProject\BinaryTreeProject.csproj", "{B956FD54-39EC-4DDD-A32F-1E7B5BAEF5A1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -92,12 +92,12 @@ Global
 		{4594B299-2BFC-4FE0-98EA-85E119B77A59}.EXTRA|Any CPU.Build.0 = Debug|Any CPU
 		{4594B299-2BFC-4FE0-98EA-85E119B77A59}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4594B299-2BFC-4FE0-98EA-85E119B77A59}.Release|Any CPU.Build.0 = Release|Any CPU
-		{691E90CA-575A-45B4-9FF6-60AA7867B07B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{691E90CA-575A-45B4-9FF6-60AA7867B07B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{691E90CA-575A-45B4-9FF6-60AA7867B07B}.EXTRA|Any CPU.ActiveCfg = Debug|Any CPU
-		{691E90CA-575A-45B4-9FF6-60AA7867B07B}.EXTRA|Any CPU.Build.0 = Debug|Any CPU
-		{691E90CA-575A-45B4-9FF6-60AA7867B07B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{691E90CA-575A-45B4-9FF6-60AA7867B07B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B956FD54-39EC-4DDD-A32F-1E7B5BAEF5A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B956FD54-39EC-4DDD-A32F-1E7B5BAEF5A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B956FD54-39EC-4DDD-A32F-1E7B5BAEF5A1}.EXTRA|Any CPU.ActiveCfg = Debug|Any CPU
+		{B956FD54-39EC-4DDD-A32F-1E7B5BAEF5A1}.EXTRA|Any CPU.Build.0 = Debug|Any CPU
+		{B956FD54-39EC-4DDD-A32F-1E7B5BAEF5A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B956FD54-39EC-4DDD-A32F-1E7B5BAEF5A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
