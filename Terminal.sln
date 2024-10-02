@@ -25,6 +25,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VisualQueueWPF", "VisualQue
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinaryTreeProject", "BinaryTreeProject\BinaryTreeProject.csproj", "{B956FD54-39EC-4DDD-A32F-1E7B5BAEF5A1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HasingProject", "HasingStringProject\HasingProject.csproj", "{2256A229-7F3C-4412-B6B4-0D1D881A1100}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -98,6 +100,12 @@ Global
 		{B956FD54-39EC-4DDD-A32F-1E7B5BAEF5A1}.EXTRA|Any CPU.Build.0 = Debug|Any CPU
 		{B956FD54-39EC-4DDD-A32F-1E7B5BAEF5A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B956FD54-39EC-4DDD-A32F-1E7B5BAEF5A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2256A229-7F3C-4412-B6B4-0D1D881A1100}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2256A229-7F3C-4412-B6B4-0D1D881A1100}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2256A229-7F3C-4412-B6B4-0D1D881A1100}.EXTRA|Any CPU.ActiveCfg = Debug|Any CPU
+		{2256A229-7F3C-4412-B6B4-0D1D881A1100}.EXTRA|Any CPU.Build.0 = Debug|Any CPU
+		{2256A229-7F3C-4412-B6B4-0D1D881A1100}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2256A229-7F3C-4412-B6B4-0D1D881A1100}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

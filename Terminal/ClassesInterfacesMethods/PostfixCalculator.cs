@@ -1,6 +1,4 @@
 ﻿using StackProject;
-using System.Security.Principal;
-
 namespace Terminal;
 internal class PostfixCalculator
 {
