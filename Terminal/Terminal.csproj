@@ -10,7 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BinaryTreeProject\BinaryTreeProject.csproj" />
-    <ProjectReference Include="..\HasingStringProject\HasingProject.csproj" />
+    <ProjectReference Include="..\HasingProject\HasingProject.csproj" />
     <ProjectReference Include="..\QueueProject\QueueProject.csproj" />
     <ProjectReference Include="..\StackProject\StackProject.csproj" />
   </ItemGroup>

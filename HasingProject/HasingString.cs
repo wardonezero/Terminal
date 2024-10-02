@@ -11,9 +11,9 @@ public static class HasingString
 
         string[] result = new string[len];
         int sum = input.Length % 4;
-        for (int i = 0, k = 0; i < sum; i++, k += 4)
+        for (int i = 0, k = 0; i < len; i++, k += 4)
         {
-            if (i < sum)
+            if (i < input.Length/4)
                 result[i] = input.Substring(k, 4);
             else
                 result[i] = input.Substring(k, sum);

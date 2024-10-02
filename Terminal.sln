@@ -25,7 +25,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VisualQueueWPF", "VisualQue
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinaryTreeProject", "BinaryTreeProject\BinaryTreeProject.csproj", "{B956FD54-39EC-4DDD-A32F-1E7B5BAEF5A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HasingProject", "HasingStringProject\HasingProject.csproj", "{2256A229-7F3C-4412-B6B4-0D1D881A1100}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HasingProject", "HasingProject\HasingProject.csproj", "{2256A229-7F3C-4412-B6B4-0D1D881A1100}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
