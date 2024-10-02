@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BinaryTreeProject\BinaryTreeProject.csproj" />
     <ProjectReference Include="..\QueueProject\QueueProject.csproj" />
     <ProjectReference Include="..\StackProject\StackProject.csproj" />
   </ItemGroup>
