@@ -43,10 +43,21 @@ public static class HashingString
         string[] result = new string[input.Length];
         for (int i = 0; i < input.Length; i++)
         {
-            for (int j = input[i].Length - 1; j > -1; j--)
+            for (int j = input[i].Length - 1; j >= 0; j--)
             {
                 result[i] += Convert.ToString(input[i][j], 2).PadLeft(8, '0');
             }
+        }
+        return result;
+    }
+    public static string[] GetStringHash(string[] input)
+    {
+        string[] result = new string[input.Length];
+        int i = 0;
+        foreach (string s in input)
+        {
+            result[i]= Convert.ToInt32(s, 2).ToString();
+            i++;
         }
         return result;
     }
