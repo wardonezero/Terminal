@@ -1,4 +1,7 @@
-﻿namespace HashingProject;
+﻿using System.ComponentModel.DataAnnotations;
+using System.Security.Cryptography;
+
+namespace HashingProject;
 public static class HashingString
 {
     public static string[] FourStringArray(string input)
@@ -56,10 +59,63 @@ public static class HashingString
         int i = 0;
         foreach (string s in input)
         {
-            result[i]= Convert.ToInt32(s, 2).ToString();
+            result[i] = Convert.ToInt32(s, 2).ToString();
             i++;
         }
         return result;
     }
 
+    public static string[] DecodeGetStringHash(string[] output)
+    {
+        string[] result = new string[output.Length];
+        int i = 0;
+        foreach (string s in output)
+        {
+            result[i] = Convert.ToString(Convert.ToInt32(s), 2).PadLeft(32, '0');
+            result[i] = result[i].Replace("00000000", "");
+            i++;
+        }
+
+        return result;
+    }
+
+    public static int[][] DecodeConvertToBinary(string[] output)
+    {
+        int[][] result = new int[output.Length][];
+        for (int i = 0; i < output.Length; i++)
+        {
+            result[i] = new int[output[i].Length / 8];
+            for (int j = 0, k = output[i].Length - 8; j < result[i].Length; j++, k -= 8)
+            {
+                result[i][j] = Convert.ToInt32(output[i].Substring(k, 8), 2);
+            }
+        }
+
+        return result;
+    }
+
+    public static string[] DecodeGetASCIKey(int[][] output)
+    {
+        string[] result = new string[output.Length];
+        for (int i = 0; i < output.Length; i++)
+        {
+            for (int j = 0; j < output[i].Length; j++)
+            {
+                result[i] += (char)output[i][j];
+            }
+        }
+
+        return result;
+    }
+
+    public static string DecodeFourStringArray(string[] output)
+    {
+        string result = string.Empty;
+
+        for (int i = 0; i < output.Length; i++)
+        {
+            result += output[i];
+        }
+        return result;
+    }
 }
