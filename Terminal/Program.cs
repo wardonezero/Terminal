@@ -8,8 +8,13 @@ using HasingProject;
 using static System.Console;
 
 string input = "lorem ipsum.123";
-string[] result = HasingString.FourStringArray(input);
-foreach (string s in result)
+string[] result1 = HasingString.FourStringArray(input);
+//foreach (string s in result1)
+//{
+//    WriteLine(s);
+//}
+int[] result2 = HasingString.GetASCIKey(result1);
+foreach (int s in result2)
 {
     WriteLine(s);
 }

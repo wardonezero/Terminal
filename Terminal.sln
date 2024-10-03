@@ -25,7 +25,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VisualQueueWPF", "VisualQue
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinaryTreeProject", "BinaryTreeProject\BinaryTreeProject.csproj", "{B956FD54-39EC-4DDD-A32F-1E7B5BAEF5A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HasingProject", "HasingProject\HasingProject.csproj", "{2256A229-7F3C-4412-B6B4-0D1D881A1100}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HashingProject", "HashingProject\HashingProject.csproj", "{D0E84C6C-C324-45A1-9490-12A576D4D03D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -100,12 +100,12 @@ Global
 		{B956FD54-39EC-4DDD-A32F-1E7B5BAEF5A1}.EXTRA|Any CPU.Build.0 = Debug|Any CPU
 		{B956FD54-39EC-4DDD-A32F-1E7B5BAEF5A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B956FD54-39EC-4DDD-A32F-1E7B5BAEF5A1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2256A229-7F3C-4412-B6B4-0D1D881A1100}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2256A229-7F3C-4412-B6B4-0D1D881A1100}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2256A229-7F3C-4412-B6B4-0D1D881A1100}.EXTRA|Any CPU.ActiveCfg = Debug|Any CPU
-		{2256A229-7F3C-4412-B6B4-0D1D881A1100}.EXTRA|Any CPU.Build.0 = Debug|Any CPU
-		{2256A229-7F3C-4412-B6B4-0D1D881A1100}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2256A229-7F3C-4412-B6B4-0D1D881A1100}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0E84C6C-C324-45A1-9490-12A576D4D03D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0E84C6C-C324-45A1-9490-12A576D4D03D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0E84C6C-C324-45A1-9490-12A576D4D03D}.EXTRA|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0E84C6C-C324-45A1-9490-12A576D4D03D}.EXTRA|Any CPU.Build.0 = Debug|Any CPU
+		{D0E84C6C-C324-45A1-9490-12A576D4D03D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0E84C6C-C324-45A1-9490-12A576D4D03D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
