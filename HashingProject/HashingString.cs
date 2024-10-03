@@ -1,5 +1,5 @@
-﻿namespace HasingProject;
-public static class HasingString
+﻿namespace HashingProject;
+public static class HashingString
 {
     public static string[] FourStringArray(string input)
     {
@@ -28,9 +28,10 @@ public static class HasingString
         int i = 0;
         foreach (string s in input)
         {
+            result[i] = new int[s.Length];
             for (int j = 0; j < s.Length; j++)
             {
-                result[i][j] = s[j];
+                result[i][j] = (int)s[j];
             }
             i++;
         }
@@ -39,8 +40,14 @@ public static class HasingString
 
     public static string[] ConvertToBinary(int[][] input)
     {
-        int len;
         string[] result = new string[input.Length];
+        for (int i = 0; i < input.Length; i++)
+        {
+            for (int j = input[i].Length - 1; j > -1; j--)
+            {
+                result[i] += Convert.ToString(input[i][j], 2).PadLeft(8, '0');
+            }
+        }
         return result;
     }
 
