@@ -543,3 +543,8 @@ mytree._head = tree;
 mytree.Remove(8);
 
     Write($" {mytree._head.Right.Value}");
+
+//35
+
+
+//36
