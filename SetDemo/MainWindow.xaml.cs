@@ -37,7 +37,7 @@ public partial class MainWindow : Window
         students.Add(new Student("Alice", 1, Gender.Female));
         students.Add(new Student("Bob", 2, Gender.Male));
         students.Add(new Student("Carol", 3, Gender.Female));
-        students.Add(new Student("Dave", 1, Gender.Male));
+        students.Add(new Student("Dave", 4, Gender.Male));
         students.Add(new Student("Eve", 5, Gender.Female));
         students.Add(new Student("Frank", 6, Gender.Male));
         students.Add(new Student("Grace", 7, Gender.Female));
