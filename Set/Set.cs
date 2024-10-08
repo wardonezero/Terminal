@@ -11,7 +11,17 @@ public class Set<T> : ICollection<T>
 
     public bool IsReadOnly => false;
 
-    public void Add(T item) => _items.Add(item);
+    public void Add(T item)
+    {
+        foreach (T existingItem in _items)
+        {
+            if (item.CompareTo(existingItem) == 0)
+            {
+                throw new InvalidOperationException("An item with the same value already exists.");
+            }
+        }
+            _items.Add(item);
+    }
 
     public void AddRange(Set<T> items)
     {

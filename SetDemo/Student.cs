@@ -5,7 +5,7 @@ internal class Student(string name, byte id, Gender gender) : IComparable<Studen
     public byte StudentID { get; private set; } = id;
     public Gender Gender { get; private set; } = gender;
 
-    public int CompareTo(Student other) => Gender.CompareTo(other.Gender);
+    public int CompareTo(Student other) => StudentID.CompareTo(other.StudentID);
 }
 public enum Gender
 {
