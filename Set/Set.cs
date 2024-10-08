@@ -13,7 +13,13 @@ public class Set<T> : ICollection<T>
 
     public void Add(T item) => _items.Add(item);
 
-    //public void AddRange(T[] items) => _items.AddRange(items);
+    public void AddRange(Set<T> items)
+    {
+        foreach (T item in items)
+        {
+            Add(item);
+        }
+    }
 
     public void Clear() => _items.Clear();
 
