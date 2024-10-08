@@ -124,7 +124,7 @@ public partial class MainWindow : Window
 
         if (Operation.SelectedItem is ComboBoxItem selectedOperation)
         {
-            string operation = selectedOperation.Content.ToString();
+            string? operation = selectedOperation.Content.ToString();
 
             result = operation switch
             {
@@ -143,14 +143,14 @@ public partial class MainWindow : Window
     {
         if (comboBox.SelectedItem is ComboBoxItem selectedItem)
         {
-            string selected = selectedItem.Content.ToString();
+            string? selected = selectedItem.Content.ToString();
             return selected switch
             {
                 "Female" => _female,
                 "Male" => _male,
                 "Reading" => _reading,
                 "Writing" => _writing,
-                _ => new Set<Student>()
+                _ => students
             };
         }
         return new Set<Student>();
