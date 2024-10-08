@@ -27,6 +27,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinaryTreeProject", "Binary
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HashingProject", "HashingProject\HashingProject.csproj", "{D0E84C6C-C324-45A1-9490-12A576D4D03D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Set", "Set\Set.csproj", "{71B56CAB-32C9-4604-A0C4-C30B9E4774BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SetDemo", "SetDemo\SetDemo.csproj", "{AC4BDABF-7F54-4442-A3F0-F04727389EFC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -106,6 +110,18 @@ Global
 		{D0E84C6C-C324-45A1-9490-12A576D4D03D}.EXTRA|Any CPU.Build.0 = Debug|Any CPU
 		{D0E84C6C-C324-45A1-9490-12A576D4D03D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0E84C6C-C324-45A1-9490-12A576D4D03D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71B56CAB-32C9-4604-A0C4-C30B9E4774BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71B56CAB-32C9-4604-A0C4-C30B9E4774BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71B56CAB-32C9-4604-A0C4-C30B9E4774BC}.EXTRA|Any CPU.ActiveCfg = Debug|Any CPU
+		{71B56CAB-32C9-4604-A0C4-C30B9E4774BC}.EXTRA|Any CPU.Build.0 = Debug|Any CPU
+		{71B56CAB-32C9-4604-A0C4-C30B9E4774BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71B56CAB-32C9-4604-A0C4-C30B9E4774BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC4BDABF-7F54-4442-A3F0-F04727389EFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC4BDABF-7F54-4442-A3F0-F04727389EFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC4BDABF-7F54-4442-A3F0-F04727389EFC}.EXTRA|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC4BDABF-7F54-4442-A3F0-F04727389EFC}.EXTRA|Any CPU.Build.0 = Debug|Any CPU
+		{AC4BDABF-7F54-4442-A3F0-F04727389EFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC4BDABF-7F54-4442-A3F0-F04727389EFC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
