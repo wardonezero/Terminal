@@ -1,12 +1,6 @@
 ﻿namespace Terminal;
-internal class Car
+internal class Car(string name, int speed)
 {
-    public string Name { get; set; }
-    public int Speed { get; set; }
-
-    public Car (string name, int speed)
-    {
-        Name = name;
-        Speed = speed;
-    }
+    public string Name { get; set; } = name;
+    public int Speed { get; set; } = speed;
 }

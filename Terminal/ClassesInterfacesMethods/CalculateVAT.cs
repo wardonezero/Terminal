@@ -7,9 +7,9 @@ internal class CalculateVAT
     public static void ToCalculateVAT()
     {
         Console.Write("Enter your income: ");
-        string income = Console.ReadLine();
+        string? income = Console.ReadLine();
         //decimal Income;
-        string isoA2;
+        string? isoA2;
         if (decimal.TryParse(income, out decimal Income))
         {
             Console.Write("Enter county iso A2 code: ");
@@ -30,31 +30,16 @@ internal class CalculateVAT
     /// <returns>A string indicating the calculated tax amount.</returns>
     private static string VatCalculation(string isoA2, decimal income)
     {
-        decimal rate;
-        switch (isoA2)
+        var rate = isoA2 switch
         {
-            case "AM":
-                rate = 20.0M;
-                break;
-            case "CA":
-                rate = 15.0M;
-                break;
-            case "FR":
-                rate = 20.0M;
-                break;
-            case "DE":
-                rate = 19.0M;
-                break;
-            case "UK":
-                rate = 14.0M;
-                break;
-            case "US":
-                rate = 11.5M;
-                break;
-            default:
-                rate = 1.0M;
-                break;
-        }
+            "AM" => 20.0M,
+            "CA" => 15.0M,
+            "FR" => 20.0M,
+            "DE" => 19.0M,
+            "UK" => 14.0M,
+            "US" => 11.5M,
+            _ => 1.0M,
+        };
         decimal tax = (income * rate) / 100;
         return $"You must pay {tax}";
     }

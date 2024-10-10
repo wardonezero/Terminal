@@ -1,5 +1,5 @@
 ﻿namespace Terminal;
-internal class Monkey :ISound
+internal class Monkey : ISound
 {
     public void Sound()
     {

@@ -1,9 +1,7 @@
-﻿namespace Terminal
+﻿namespace Terminal;
+public enum WorkType
 {
-    public enum WorkType
-    {
-        Meeting,
-        Research,
-        Reports
-    }
+    Meeting,
+    Research,
+    Reports
 }

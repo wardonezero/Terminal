@@ -1,10 +1,7 @@
 ﻿using System.Collections;
-
-namespace Terminal
+namespace Terminal;
+internal class Spectrum : IEnumerable
 {
-    internal class Spectrum : IEnumerable
-    {
-        public string[] Colors = ["violet", "blue", "cyan", "green", "yellow", "orange", "red"];
-        public IEnumerator GetEnumerator() { return new ColorEnumerator(Colors); }
-    } 
-}
+    public string[] Colors = ["violet", "blue", "cyan", "green", "yellow", "orange", "red"];
+    public IEnumerator GetEnumerator() { return new ColorEnumerator(Colors); }
+} 

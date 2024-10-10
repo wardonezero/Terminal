@@ -7,7 +7,7 @@ internal class OrdinlNumber
     public static void ToOrdinlNumber()
     {
         Console.Write("Enter range of number: ");
-        string range = Console.ReadLine();
+        string? range = Console.ReadLine();
         if (int.TryParse(range, out int cardinal) && cardinal >= 1)
         {
             GetOrdinalNumber(cardinal);
@@ -27,32 +27,17 @@ internal class OrdinlNumber
 
         for (int i = 1; i <= cardinal; i++)
         {
-            switch (i % 100)
+            ordinal = (i % 100) switch
             {
-                case 11:
-                case 12:
-                case 13:
-                    ordinal = $"{i}th";
-                    break;
-                default:
-
-                    switch (i % 10)
-                    {
-                        case 1:
-                            ordinal = $"{i}st";
-                            break;
-                        case 2:
-                            ordinal = $"{i}nd";
-                            break;
-                        case 3:
-                            ordinal = $"{i}rd";
-                            break;
-                        default:
-                            ordinal = $"{i}th";
-                            break;
-                    }
-                    break;
-            }
+                11 or 12 or 13 => $"{i}th",
+                _ => (i % 10) switch
+                {
+                    1 => $"{i}st",
+                    2 => $"{i}nd",
+                    3 => $"{i}rd",
+                    _ => $"{i}th",
+                },
+            };
             Console.WriteLine(ordinal);
         }
     }

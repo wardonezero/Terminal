@@ -5,7 +5,7 @@ internal class Foo
     private int _suspendCount;
     //public void SuspendEvents() => _suspendCount++;
     //public void ResumeEvents() => _suspendCount--;//low codes
-    void FireSomeEvent()
+    public void FireSomeEvent()
     {
         if (_suspendCount == 0)
             WriteLine(">>> == 0 ");

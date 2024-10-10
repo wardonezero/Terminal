@@ -37,7 +37,7 @@ internal class ContactConsoleWriter(Contact contact)
     {
         WriteLine(contact.AgeInYears);
     }
-    private void UseDefaultColor()
+    private static void UseDefaultColor()
     {
         var defaultColorAttribute = (DefaultColorAttribute?)Attribute.GetCustomAttribute(typeof(Contact), typeof(DefaultColorAttribute));
         if (defaultColorAttribute != null)
@@ -47,7 +47,7 @@ internal class ContactConsoleWriter(Contact contact)
     private void RestoreForegroundColor() { ForegroundColor = _color; }
     //Attribute
     [Conditional("DEBUG")]
-    private void OutputDebugInfo() { WriteLine("****DEBUG MODE****"); }
+    private static void OutputDebugInfo() => WriteLine("****DEBUG MODE****");
     [Conditional("EXTRA")]
-    private void OutputExtraInfo() { WriteLine("****EXTRA INFO****"); }
+    private static void OutputExtraInfo() => WriteLine("****EXTRA INFO****");
 }

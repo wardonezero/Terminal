@@ -6,6 +6,6 @@ internal class DerivedClass : BaseClass
         _x++;
         _y++;
     }
-    public override int X { get { return _x+10; } }
-    public override int Y { get { return _y+10; } }
+    public override int X { get { return _x + 10; } }
+    public override int Y { get { return _y + 10; } }
 }

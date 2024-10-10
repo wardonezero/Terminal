@@ -2,7 +2,7 @@
 namespace Terminal;
 internal class PostfixCalculator
 {
-    string[] input = ["4", "2", "6", "*", "+", "8", "-", "2"];
+    public string[] input = ["4", "2", "6", "*", "+", "8", "-", "2"];
     public MyStack<double> mystack = new();
     public void Postfix()
     {
