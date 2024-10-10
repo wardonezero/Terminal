@@ -82,27 +82,15 @@ public partial class MainWindow : Window
         {
             string? selectedSet = selectedItem.Content.ToString();
             Set<Student> filteredStudents = [];
-            switch (selectedSet)
+            filteredStudents = selectedSet switch
             {
-                case "All Students":
-                    filteredStudents = students;
-                    break;
-                case "Female":
-                    filteredStudents = _female;
-                    break;
-                case "Male":
-                    filteredStudents = _male;
-                    break;
-                case "Reading":
-                    filteredStudents = _reading;
-                    break;
-                case "Writing":
-                    filteredStudents = _writing;
-                    break;
-                default:
-                    filteredStudents = _result;
-                    break;
-            }
+                "All Students" => students,
+                "Female" => _female,
+                "Male" => _male,
+                "Reading" => _reading,
+                "Writing" => _writing,
+                _ => _result,
+            };
             listBox.Items.Clear();
             foreach (Student student in filteredStudents)
             {
@@ -153,6 +141,6 @@ public partial class MainWindow : Window
                 _ => students
             };
         }
-        return new Set<Student>();
+        return [];
     }
 }

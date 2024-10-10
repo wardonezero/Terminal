@@ -17,8 +17,8 @@ namespace VisualQueueWPF;
 /// </summary>
 public partial class MainWindow : Window
 {
-    Random random = new Random();
-    MyQueue<int> _list = new MyQueue<int>();
+    Random random = new();
+    MyQueue<int> _list = new();
     public MainWindow()
     {
         InitializeComponent();
@@ -42,7 +42,7 @@ public partial class MainWindow : Window
 
     private void UpdateGrid()
     {
-        System.Windows.Controls.Label[] labels = { label0, label1, label2, label3, label4, label5 };
+        System.Windows.Controls.Label[] labels = [label0, label1, label2, label3, label4, label5];
         MyLinkedListNode<int> current = _list.GetHead();
         for (int i = 0; i < 6; i++)
         {

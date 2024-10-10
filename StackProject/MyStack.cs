@@ -3,7 +3,7 @@ using MyDataStructure;
 namespace StackProject;
 public class MyStack<T> : IEnumerable<T>
 {
-    private MyLinkedList<T> _list = new MyLinkedList<T>();
+    private MyLinkedList<T> _list = [];
     public void Push(T item) => _list.AddFirst(item);
     public T Pop()
     {

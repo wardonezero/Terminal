@@ -6,7 +6,7 @@ public partial class Person : object
     public DateOnly DateOfBirth;
     public WonderOfTheAnciantWorld FavoriteAncientWonder;
     public WonderOfTheAnciantWorld BucketList;
-    public List<Person> Children = new List<Person>();
+    public List<Person> Children = [];
     public const string Species = "Homo Sapien";
     public readonly string homePlanet = "Earth";
     public readonly DateTime Instantiated;

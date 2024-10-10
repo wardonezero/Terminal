@@ -91,4 +91,3 @@ string number1 = "4";
 WriteLine($"{number1} squared is {Squarer.Square<string>(number1)}");
 byte number2 = 3;
 WriteLine($"{number2} squared is {Squarer.Square(number2)}");
-Console.WriteLine();

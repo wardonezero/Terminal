@@ -31,9 +31,9 @@ public partial class MainWindow : Window
         {
             if (operation != null)
             {
-                Fraction fraction1 = new Fraction(intNum1, intDen1);
-                Fraction fraction2 = new Fraction(intNum2, intDen2);
-                Fraction fraction3 = new Fraction(1, 1);
+                Fraction fraction1 = new(intNum1, intDen1);
+                Fraction fraction2 = new(intNum2, intDen2);
+                Fraction fraction3 = new(1, 1);
                 switch (operation)
                 {
                     case "+":

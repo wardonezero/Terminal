@@ -3,7 +3,7 @@ using System.Collections;
 namespace QueueProject;
 public class MyQueue<T> : IEnumerable<T>
 {
-    MyLinkedList<T> _queue = new MyLinkedList<T>();
+    MyLinkedList<T> _queue = [];
 
     public void Enqueue(T item) => _queue.AddLast(item);
     public T Dequeue()
@@ -20,7 +20,7 @@ public class MyQueue<T> : IEnumerable<T>
     public int Count => _queue.Count;
     public void Clear() { }
 
-    public MyLinkedListNode<T> GetHead()=>_queue.Head;
+    public MyLinkedListNode<T>? GetHead() => _queue.Head;
 
     public IEnumerator<T> GetEnumerator() => _queue.GetEnumerator();
 

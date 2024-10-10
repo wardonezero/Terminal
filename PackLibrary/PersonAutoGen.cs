@@ -1,16 +1,16 @@
 namespace Pack.Shared;
 public partial class Person
 {
-    public string origin
+    public string Origin
     {
         get
         {
             return $"{name} was born on {homePlanet}.";
         }
     }
-    public string greeting => $"{name} says 'Hello'";
-    public string age => $"Her age is {DateTime.Today.Year - DateOfBirth.Year}";
-    public string? favoriteIceCream { get; set; }
+    public string Greeting => $"{name} says 'Hello'";
+    public string Age => $"Her age is {DateTime.Today.Year - DateOfBirth.Year}";
+    public string? FavoriteIceCream { get; set; }
     private string favoritePrimaryColor = string.Empty;
     public string FavoritePrimaryColor
     {
@@ -20,16 +20,11 @@ public partial class Person
         }
         set
         {
-            switch (value.ToLower())
+            favoritePrimaryColor = value.ToLower() switch
             {
-                case "red":
-                case "green":
-                case "blue":
-                    favoritePrimaryColor = value;
-                    break;
-                default:
-                    throw new ArgumentException($"{value} is not a primary color. Choose from: red, green or blue.");
-            }
+                "red" or "green" or "blue" => value,
+                _ => throw new ArgumentException($"{value} is not a primary color. Choose from: red, green or blue."),
+            };
         }
     }
     public Person this[int index]

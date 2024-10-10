@@ -11,7 +11,7 @@ public struct Fraction
         _denominator = denominator;
     }
     public static Fraction operator +(Fraction a) => a;
-    public static Fraction operator -(Fraction a) => new Fraction(-a._numerator, a._denominator);
+    public static Fraction operator -(Fraction a) => new(-a._numerator, a._denominator);
     public static Fraction operator +(Fraction a, Fraction b)
     {
         if (a._denominator == b._denominator)
@@ -19,9 +19,9 @@ public struct Fraction
         else
         {
             int lcm = LCM(a._denominator, b._denominator);
-            return Simplifier(new Fraction((lcm/a._denominator)*a._numerator+ (lcm / b._denominator) * b._numerator, lcm));
+            return Simplifier(new Fraction((lcm / a._denominator) * a._numerator + (lcm / b._denominator) * b._numerator, lcm));
         }
-            //return new Fraction(a._numerator * b._denominator + a._denominator * b._numerator, a._denominator * b._denominator);
+        //return new Fraction(a._numerator * b._denominator + a._denominator * b._numerator, a._denominator * b._denominator);
     }
     public static Fraction operator -(Fraction a, Fraction b)
     {
@@ -32,7 +32,7 @@ public struct Fraction
             int lcm = LCM(a._denominator, b._denominator);
             return Simplifier(new Fraction((lcm / a._denominator) * a._numerator - (lcm / b._denominator) * b._numerator, lcm));
         }
-            //return new Fraction(a._numerator * b._denominator - a._denominator * b._numerator, a._denominator * b._denominator);
+        //return new Fraction(a._numerator * b._denominator - a._denominator * b._numerator, a._denominator * b._denominator);
     }
     public static Fraction operator *(Fraction a, Fraction b)
     {
@@ -45,7 +45,7 @@ public struct Fraction
     public override string ToString() => $"{_numerator} / {_denominator}";
     private static Fraction Simplifier(Fraction s)
     {
-        int gcd = s._numerator < s._denominator? GCD(s._denominator, s._numerator): GCD(s._numerator, s._denominator);
+        int gcd = s._numerator < s._denominator ? GCD(s._denominator, s._numerator) : GCD(s._numerator, s._denominator);
         return new Fraction(s._numerator / gcd, s._denominator / gcd);
     }
     //Greatest Common Divisor
