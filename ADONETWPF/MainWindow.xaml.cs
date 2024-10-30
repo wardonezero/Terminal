@@ -30,7 +30,7 @@ namespace ADONETWPF
                                         Trust Server Certificate=True;
                                         Application Intent=ReadWrite;
                                         Multi Subnet Failover=False";
-            string sql = "SELECT * FROM HR. Employees";
+            string sql = "SELECT empid, lastname, firstname, hiredate , country FROM HR.Employees WHERE empid > 2";
             using SqlConnection connection = new(connectionString);
             connection.Open();
             SqlDataAdapter adapter = new(sql, connection);
